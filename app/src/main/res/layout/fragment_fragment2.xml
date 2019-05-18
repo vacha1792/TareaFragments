@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".fragment2" android:id="@+id/frameLayout3"
+                                             android:background="@color/colorPrimaryDark">
+    <EditText
+            android:layout_width="292dp"
+            android:layout_height="42dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/url"
+            android:hint="Ingresa la URL"
+            app:layout_constraintStart_toEndOf="@+id/BtnIr"
+            android:layout_marginStart="7dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="17dp"/>
+    <Button
+            android:text="Ir"
+            android:layout_width="85dp"
+            android:layout_height="42dp"
+            android:id="@+id/BtnIr"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="7dp" app:layout_constraintEnd_toStartOf="@+id/url"
+            android:layout_marginEnd="7dp" android:layout_marginBottom="13dp"
+            app:layout_constraintBottom_toTopOf="@+id/webNav" android:layout_marginStart="18dp"/>
+    <WebView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/webNav"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/url" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>
